@@ -1,0 +1,118 @@
+/* Css grid With photo and para */
+.grid-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto ;
+        /* grid-template-rows: auto ; */
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: 774px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        /* grid-template-rows: auto ; */
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 20px;
+    }
+  }
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 21px;
+    display: grid;
+    place-items: center;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+.row {
+    margin: 45px;
+}
+
+/* My skills */
+
+.skills {
+    padding: 0 0 40px 0;
+}
+
+
+
+.skills .skilldiv .skillshead {
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.skills .skilldiv ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.skills .skilldiv ul li {
+    color: white;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(26, 89, 209, 0.96);
+    position: relative;
+    text-align: center;
+}
+
+.skills .skilldiv ul {
+    list-style: none;
+}
+
+.skills .skilldiv ul li span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Social Media Links */
+
+  .row a{
+    text-decoration: none;
+ }
